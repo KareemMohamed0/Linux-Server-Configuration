@@ -97,4 +97,4 @@ This project learn how to configure linux server (aws) and deploy web app (pytho
         application.secret_key = 'dsndjdnsjdns'
         ```
     - ``$ sudo service apache2 restart``
-    ` opne ``http://18.197.35.136/`` my website is deployed successfully 
+    - open ``http://18.197.35.136/`` my website is deployed successfully 
