@@ -107,7 +107,7 @@ This project learn how to configure linux server (aws) and deploy web app (pytho
 - #### Update packages issue 
     - ``$ sudo apt-get update && sudo apt-get dist-upgrade``
 - #### Refrences
-    - [a link](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#disabling-password-authentication-on-your-server)
-    - [a link](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04)
-    - [a link](https://serverfault.com/questions/265410/ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update)
-    - [a link] (https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+    - [disabling-password-authentication-on-your-server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#disabling-password-authentication-on-your-server)
+    - [how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04)
+    - [ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update](https://serverfault.com/questions/265410/ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update)
+    - [how-to-deploy-a-flask-application-on-an-ubuntu-vps] (https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
