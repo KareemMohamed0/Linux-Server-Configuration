@@ -28,10 +28,16 @@ This project learn how to configure linux server (aws) and deploy web app (pytho
    -  ``$ sudo nano authorized_keys`` then paste rsa (private key) to this file
    -  ``$ chmod 700 .ssh`` making the folder readable, writable and executable by everyone
    -  ``$ chmod 644 .ssh/authorized_keys`` making file are readable and writeable by the owner of the file and readable by users in the group
+   - ``$ sudo nano /etc/ssh/sshd_config`` , then change ``PasswordAuthentication`` to ``no``
    -  `$  sudo service ssh restart`
 - #### Fire wall 
    - open network tab at account profile 
    - add another port 2200 aith portocol tcp 
+   - ``$ sudo ufw allow 2200/tcp``
+   - ``$ sudo ufw allow 123/udp``
+   - ``$ sudo ufw allow ntp``
+   - ``$ sudo ufw enable``
+
 - #### Time zone
   - ``$ sudo dpkg-reconfigure tzdata``
   - select none of above
@@ -97,4 +103,11 @@ This project learn how to configure linux server (aws) and deploy web app (pytho
         application.secret_key = 'dsndjdnsjdns'
         ```
     - ``$ sudo service apache2 restart``
-    - open ``http://18.197.35.136/`` my website is deployed successfully 
+    - open ``http://18.197.35.136/`` my website is deployed successfully
+- #### Update packages issue 
+    - ``$ sudo apt-get update && sudo apt-get dist-upgrade``
+- #### Refrences
+    - [a link](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#disabling-password-authentication-on-your-server)
+    - [a link](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04)
+    - [a link](https://serverfault.com/questions/265410/ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update)
+    - [a link] (https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
